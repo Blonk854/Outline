@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 130">
+  <defs>
+
+    <!-- =========================================================
+         BRAND COLORS
+    ========================================================== -->
+    <linearGradient id="soyGradient"
+      x1="15%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%"   stop-color="#D9F99D"/>
+      <stop offset="32%"  stop-color="#86EFAC"/>
+      <stop offset="68%"  stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+
+    <linearGradient id="stemGradient"
+      x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#166534"/>
+      <stop offset="55%"  stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#86EFAC"/>
+    </linearGradient>
+
+    <linearGradient id="leafSheen"
+      x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity=".50"/>
+      <stop offset="45%"  stop-color="#FFFFFF" stop-opacity=".12"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Very subtle depth -->
+    <filter id="shadow"
+      x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow
+        dx="0"
+        dy="5"
+        stdDeviation="5"
+        flood-color="#14532D"
+        flood-opacity=".16"/>
+    </filter>
+
+    <!-- Tiny highlight -->
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+
+  </defs>
+
+
+  <!-- =========================================================
+       ICON
+  ========================================================== -->
+  <g transform="translate(28 5)" filter="url(#shadow)">
+
+    <!-- Stem -->
+    <path
+    d="M49 101
+     C56 84 52 69 46 48
+     C44.5 44 43 41 41 38"
+      fill="none"
+      stroke="url(#stemGradient)"
+      stroke-width="5"
+      stroke-linecap="round"/>
+
+    <!-- Small stem branch -->
+    <path
+      d="M49 69
+         C40 59 34 53 27 46"
+      fill="none"
+      stroke="url(#stemGradient)"
+      stroke-width="3.5"
+      stroke-linecap="round"/>
+
+
+    <!-- =======================================================
+         LEFT LEAF
+    ======================================================== -->
+    <g transform="rotate(-39 31 64)">
+
+      <path
+        d="M43 70
+           C21 67
+            5 53
+            5 35
+           C5 20
+           17 13
+           29 16
+           C43 19
+           51 34
+           48 48
+           C46 57
+           44 64
+           43 70Z"
+        fill="url(#soyGradient)"/>
+
+      <!-- Leaf vein -->
+      <path
+        d="M11 27
+           C22 35
+            32 45
+            43 63"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-opacity=".38"
+        stroke-width="1.7"
+        stroke-linecap="round"/>
+
+      <!-- Subtle sheen -->
+      <path
+        d="M13 25
+           C19 17 30 17 37 23
+           C26 23 19 27 14 36
+           C11 32 11 28 13 25Z"
+        fill="url(#leafSheen)"/>
+
+    </g>
+
+
+    <!-- =======================================================
+         RIGHT LEAF
+    ======================================================== -->
+    <g transform="rotate(12 61 39)">
+
+      <path
+        d="M50 51
+           C52 31
+           66 16
+           84 17
+           C101 18
+           108 31
+           101 45
+           C94 58
+           74 62
+           50 51Z"
+        fill="url(#soyGradient)"/>
+
+      <!-- Leaf vein -->
+      <path
+        d="M57 46
+           C68 37
+            79 31
+            96 27"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-opacity=".38"
+        stroke-width="1.7"
+        stroke-linecap="round"/>
+
+      <!-- Subtle sheen -->
+      <path
+        d="M63 29
+           C72 20 86 20 94 25
+           C82 25 72 29 65 37
+           C62 35 61 32 63 29Z"
+        fill="url(#leafSheen)"/>
+
+    </g>
+
+
+  <!-- =========================================================
+       TYPOGRAPHY
+  ========================================================== -->
+
+  <!-- Eyebrow -->
+  <text
+    x="124"
+    y="52"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="14"
+    font-weight="600"
+    letter-spacing="3.2"
+    fill="#64748B">
+    POWERED BY
+  </text>
+
+
+  <!-- Brand -->
+  <text
+    x="121"
+    y="94"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="39"
+    font-weight="750"
+    letter-spacing="-1.4"
+    fill="#17251D">
+    BigSoy
+  </text>
+
+  <text
+    x="244"
+    y="94"
+    font-family="Inter, Segoe UI, Arial, sans-serif"
+    font-size="39"
+    font-weight="750"
+    letter-spacing="-1.4"
+    fill="url(#soyGradient)">
+    Studios
+  </text>
+
+    </g>
+
+</svg>
